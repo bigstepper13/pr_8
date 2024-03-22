@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">pr4</string>
+    <string name="button_men_perfumery">Список мужских ароматов</string>
+    <string name="button_women_perfumery">Список женских ароматов</string>
+</resources>
