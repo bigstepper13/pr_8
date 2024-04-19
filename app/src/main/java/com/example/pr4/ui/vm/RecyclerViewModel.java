@@ -6,8 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.pr4.model.ModelItem;
-import com.example.pr4.repository.Repository;
+import com.example.pr4.data.model.ModelItem;
+import com.example.pr4.data.repository.Repository;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ public class RecyclerViewModel extends AndroidViewModel {
     private LiveData<String> women;
     public RecyclerViewModel(@NonNull Application application) {
         super(application);
-        Repository repository = new Repository();
+        Repository repository = new Repository(application);
         menData = repository.getMenData();
         womenData = repository.getWomenData();
         men = repository.getMen();
@@ -41,3 +41,4 @@ public class RecyclerViewModel extends AndroidViewModel {
         return women;
     }
 }
+

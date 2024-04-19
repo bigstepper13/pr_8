@@ -1,4 +1,4 @@
-package com.example.pr4.model;
+package com.example.pr4.data.model;
 
 public class ModelItem {
     private int imageField;

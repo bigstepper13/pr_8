@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pr4.R;
-import com.example.pr4.model.ModelItem;
+import com.example.pr4.data.model.ModelItem;
 
 import java.util.ArrayList;
 import java.util.List;

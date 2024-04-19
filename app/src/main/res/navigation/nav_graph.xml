@@ -11,9 +11,16 @@
         <action
             android:id="@+id/action_mainFragment_to_recyclerFragment"
             app:destination="@id/recyclerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_perfumeryFragment"
+            app:destination="@id/perfumeryFragment" />
     </fragment>
     <fragment
         android:id="@+id/recyclerFragment"
         android:name="com.example.pr4.ui.fragments.RecyclerFragment"
         android:label="RecyclerFragment" />
+    <fragment
+        android:id="@+id/perfumeryFragment"
+        android:name="com.example.pr4.ui.fragments.PerfumeryFragment"
+        android:label="PerfumeryFragment" />
 </navigation>
