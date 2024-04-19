@@ -12,8 +12,6 @@ import com.example.pr4.data.repository.Repository;
 import java.util.List;
 
 public class MainViewModel extends AndroidViewModel {
-    private LiveData<String> buttonNavigateToMen;
-    private LiveData<String> buttonNavigateToWomen;
 
     Repository Repository;
 
@@ -32,10 +30,9 @@ public class MainViewModel extends AndroidViewModel {
     }
 
     public LiveData<String> getButtonNavigateToMen() {
-        return buttonNavigateToMen;
+        return Repository.getNavigateButtonMen();
     }
     public LiveData<String> getButtonNavigateToWomen() {
-        return buttonNavigateToWomen;
+        return Repository.getNavigateButtonWomen();
     }
 }
-

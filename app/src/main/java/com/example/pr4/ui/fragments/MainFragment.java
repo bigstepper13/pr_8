@@ -60,10 +60,12 @@ public class MainFragment extends Fragment {
 
         buttonCheckMenPerfumery = (Button) getActivity().findViewById(R.id.button_check_men_perfumery);
         buttonCheckWomenPerfumery = (Button) getActivity().findViewById(R.id.button_women_perfumery);
+
         viewModel.getButtonNavigateToMen().observe(getViewLifecycleOwner(), text ->
                 buttonCheckMenPerfumery.setText(text));
         viewModel.getButtonNavigateToWomen().observe(getViewLifecycleOwner(), text ->
                 buttonCheckWomenPerfumery.setText(text));
+
         buttonCheckMenPerfumery.setOnClickListener(v -> {
             Bundle bundle = new Bundle();
             bundle.putString("key", "men perfumery");
